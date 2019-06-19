@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "homepage": "https://mhouston4994.github.io/portfolio"
   "scripts": {
-    "sass": "node-sass -w scss/ -o public/stylesheets/ --recursive"
+    "sass": "node-sass -w scss/ -o public/stylesheets/ --recursive",
+    "deploy": "gh-pages -d views"
   },
   "author": "Matthew Houston",
   "license": "ISC",
