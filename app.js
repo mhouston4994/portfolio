@@ -4,7 +4,7 @@ var bodyParser = require("body-parser");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "../public"));
 
 //ROUTES
 app.get("/", function(req, res){
@@ -12,15 +12,15 @@ app.get("/", function(req, res){
 });
 
 app.get("/about", function(req, res){
-    res.render("about.ejs", {title: "About Me"});
+    res.render("about", {title: "About Me"});
 });
 
 app.get("/work", function(req, res){
-    res.render("work.ejs", {title: "View My Work"});
+    res.render("work", {title: "View My Work"});
 });
 
 app.get("/contact", function(req, res){
-    res.render("contact.ejs", {title: "Contact Me"});
+    res.render("contact", {title: "Contact Me"});
 });
 
 app.listen(process.env.PORT, process.env.IP, function(req, res){
