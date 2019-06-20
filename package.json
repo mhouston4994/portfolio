@@ -4,9 +4,8 @@
   "description": "",
   "main": "app.js",
   "homepage": "https://mhouston4994.github.io/portfolio",
-  "start": "node app.js",
   "scripts": {
-    
+    "start": "node app.js",
   },
   "author": "Matthew Houston",
   "license": "ISC",
