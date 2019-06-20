@@ -12,15 +12,15 @@ app.get("/", function(req, res){
 });
 
 app.get("/about", function(req, res){
-    res.render("about", {title: "About Me"});
+    res.render("about.ejs", {title: "About Me"});
 });
 
 app.get("/work", function(req, res){
-    res.render("work", {title: "View My Work"});
+    res.render("work.ejs", {title: "View My Work"});
 });
 
 app.get("/contact", function(req, res){
-    res.render("contact", {title: "Contact Me"});
+    res.render("contact.ejs", {title: "Contact Me"});
 });
 
 app.listen(process.env.PORT, process.env.IP, function(req, res){
