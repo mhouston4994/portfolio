@@ -313,6 +313,6 @@ main {
     grid-template-columns: 1fr; }
     .about-info .bio-image {
       width: 35vw;
-      height: 30vh;
+      height: 30vh; }
   .projects {
     grid-template-columns: 1fr; } }
