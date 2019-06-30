@@ -159,8 +159,8 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
-    width: 25vw;
-    height: 30vh;
+    width: 100%;
+    height: 25vh;
     margin: auto;
     border-radius: 50%;
     border: #eece1a 3px solid; }
@@ -184,7 +184,7 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    height: 25vh;
+    height: 100%;
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
@@ -311,8 +311,5 @@ main {
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
-    .about-info .bio-image {
-      width: 35vw;
-      height: 30vh; }
   .projects {
     grid-template-columns: 1fr; } }

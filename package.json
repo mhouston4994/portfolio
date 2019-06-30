@@ -5,6 +5,7 @@
   "main": "app.js",
   "homepage": "https://mhouston4994.github.io/portfolio",
   "scripts": {
+    "sass": "node-sass -w scss/ -o public/stylesheets/ --recursive",
     "start": "node app.js"
   },
   "author": "Matthew Houston",
