@@ -42,7 +42,7 @@
             Contact <span class="text-secondary">Me</span>
         </h1>
         <h2 class="sm-heading">
-            This is how you can reach me...
+            You can reach me by:
         </h2>
         <div class="boxes">
             <div>
@@ -56,6 +56,13 @@
             <div>
                 <span class="text-secondary">Location: </span>
                 Aurora, Co
+            </div>
+            <div>
+                <form action="/contact" method="POST">
+                    <label for="userText">Request More Info:</label>
+                    <textarea name="userText" rows="4" cols="50" required></textarea>
+                    <input class="btn" type="submit" value="Send Message">
+                </form>
             </div>
         </div>
     </main>

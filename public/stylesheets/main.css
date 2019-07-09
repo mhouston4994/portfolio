@@ -122,8 +122,7 @@ h1, h2, h3 {
     font-size: 6rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: reba(#494949, 0.5); }
+    padding: 0.2rem 1rem; }
 
 a {
   color: #fff;
@@ -155,12 +154,12 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
-    width: 100%;
-    height: 25vh;
+    width: 25vw;
+    height: 30vh;
     margin: auto;
     border-radius: 50%;
     border: #eece1a 3px solid; }
@@ -184,7 +183,7 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    height: 100%;
+    height: 25vh;
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
@@ -209,11 +208,46 @@ main {
       color: #000; }
       .boxes div:hover span {
         color: #000; }
+      .boxes div:hover label {
+        color: #000; }
+
+form textarea {
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  resize: none;
+  padding: .5rem 1rem;
+  border-radius: 2px;
+  background: #656565;
+  box-shadow: inset 0px 0px 10px #292929;
+  color: #eece1a;
+  transition: all 0.5s ease-out; }
+
+form label {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.4rem;
+  text-align: center;
+  color: #eece1a; }
+  form label .hide {
+    opacity: 0;
+    font-size: .5rem; }
+
+form .btn, form .btn-dark, form .btn-light {
+  display: block;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .9rem;
+  border-radius: 8px; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
+  border-radius: 2px;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #eece1a;
@@ -252,7 +286,8 @@ main {
     text-align: center; }
     main .lg-heading {
       line-height: 1s;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      font-size: 4rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -282,7 +317,8 @@ main {
     text-align: center; }
     main main .lg-heading {
       line-height: 1s;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      font-size: 4rem; }
   main ul.menu-nav,
   main div.menu-branding {
     float: none;
@@ -311,5 +347,17 @@ main {
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
+    .about-info .bio-image {
+      width: 35vw;
+      height: 30vh; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .boxes div {
+    font-size: .9rem;
+    border: none;
+    border-bottom: 3px #fff solid; }
+  .boxes label {
+    font-size: 1.1rem; }
+  .boxes .btn, .boxes .btn-dark, .boxes .btn-light {
+    font-size: 10px;
+    width: 60%; } }

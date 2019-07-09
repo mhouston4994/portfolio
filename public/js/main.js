@@ -4,6 +4,9 @@ const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-items");
+const contactForm = document.querySelector("contactForm");
+const contactLabel = document.querySelector("formLabel");
+const contactText = document.querySelector("infoText");
 
 // Set Initial State Of Menu
 var showMenu = false;
@@ -30,3 +33,5 @@ function toggleMenu() {
         showMenu = false;
     }
 }
+//Contact Form
+var hideForm = false;

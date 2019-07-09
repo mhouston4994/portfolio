@@ -31,6 +31,7 @@
         .lg-heading {
             line-height: 1s;
             margin-bottom: 1rem;
+            font-size: 4rem;
         }
     }
     
@@ -78,6 +79,7 @@
         .lg-heading {
             line-height: 1s;
             margin-bottom: 1rem;
+            font-size: 4rem;
         }
     }
     
@@ -125,8 +127,26 @@
         'job3';
         
         grid-template-columns: 1fr;
+        .bio-image {
+            width: 35vw;
+            height: 30vh;
+        }
     }
     .projects {
         grid-template-columns: 1fr;
+    }
+    .boxes {
+        div {
+            font-size: .9rem;
+            border: none;
+            border-bottom: 3px #fff solid;
+        }
+        label {
+            font-size: 1.1rem;
+        }
+        .btn {
+            font-size: 10px;
+            width: 60%;
+        }
     }
 }
