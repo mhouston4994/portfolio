@@ -5,11 +5,13 @@
   "main": "app.js",
   "homepage": "https://mhouston4994.github.io/portfolio",
   "scripts": {
+    "sass": "node-sass -w scss/ -o public/stylesheets/ --recursive",
     "start": "node app.js"
   },
   "author": "Matthew Houston",
   "license": "ISC",
   "dependencies": {
+    "async": "^3.1.0",
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
     "dot-env": "0.0.1",
