@@ -67,6 +67,6 @@ app.get("/contact", function(req, res){
     })
   });
 
-app.listen(listenPort, listenIP, function(req, res){
+app.listen(process.env.PORT, process.env.IP, function(req, res){
     console.log("Server Started");
 })
