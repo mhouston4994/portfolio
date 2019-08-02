@@ -9,7 +9,6 @@
 @include mediaLg {
     .about-info {
         grid-template-areas:
-        'bioimage'
         'bio'
         'job1'
         'job2'
@@ -56,12 +55,6 @@
         height: 25vh;
         transform: translate3d(100%,0,0);
         
-        .portrait {
-            background: url(../img/portrait.jpg);
-            background-size: 150px, 150px;
-            height: 150px;
-            width: 150px;
-        }
     }
     
     .projects {
@@ -103,13 +96,6 @@
     .menu-branding {
         height: 25vh;
         transform: translate3d(100%,0,0);
-        
-        .portrait {
-            background: url(../img/portrait.jpg);
-            background-size: 150px, 150px;
-            height: 150px;
-            width: 150px;
-        }
     }
     }
     &#home h1 {
@@ -120,17 +106,12 @@
     }
     .about-info {
         grid-template-areas:
-        'bioimage'
         'bio'
         'job1'
         'job2'
         'job3';
         
         grid-template-columns: 1fr;
-        .bio-image {
-            width: 35vw;
-            height: 30vh;
-        }
     }
     .projects {
         grid-template-columns: 1fr;
