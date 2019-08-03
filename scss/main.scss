@@ -76,18 +76,10 @@ main {
     display: grid;
     grid-gap: 30px;
     grid-template-areas:
-    'bioimage bio bio'
+    'bio bio bio'
     'job1 job2 job3';
     grid-template-columns: repeat(3, 1fr);
     
-    .bio-image {
-        grid-area: bioimage;
-        width: 25vw;
-        height: 30vh;
-        margin: auto;
-        border-radius: 50%;
-        border: $secondary-color 3px solid;
-    }
     
     .bio {
         grid-area: bio;
@@ -99,6 +91,7 @@ main {
     }
     .job-2 {
         grid-area: job2;
+        
     }
     .job-3 {
         grid-area: job3;
@@ -136,12 +129,13 @@ main {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 1rem;
+    flex-basis: 70%;
     
     div {
         font-size: 2rem;
-        border: 3px #fff solid;
         padding: 1.5rem 2.5rem;
         margin-bottom: 3rem;
+        border-bottom: 3px #fff solid;
         @include easeOut;
         
         &:hover {
@@ -156,52 +150,6 @@ main {
             }
         }
     }
-}
-
-//CONTACT FORM
-form {
-
-    
-
-    textarea {
-        height: 100%;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        resize: none;
-        padding: .5rem 1rem;
-        border-radius: 2px;
-        background: #656565;
-        box-shadow: inset 0px 0px 10px #292929;
-        color: $secondary-color;
-        @include easeOut;
-    
-        &:focus {
-            
-        }
-}
-    label {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 2.4rem;
-        text-align: center;
-        color: $secondary-color;
-
-        .hide{
-            opacity: 0;
-            font-size: .5rem;
-        }
-    }
-    .btn {
-        display: block;
-        width: 40%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: .9rem;
-        border-radius: 8px;
-    }
-
 }
 
 // Button Styles

@@ -95,7 +95,7 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
   body#bg-img {
-    background: url(../img/background.jpg);
+    background: url(../img/background-min.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -147,15 +147,8 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bio bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
-  .about-info .bio-image {
-    grid-area: bioimage;
-    width: 25vw;
-    height: 30vh;
-    margin: auto;
-    border-radius: 50%;
-    border: #eece1a 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -188,12 +181,13 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  flex-basis: 70%; }
   .boxes div {
     font-size: 2rem;
-    border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
+    border-bottom: 3px #fff solid;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
@@ -203,38 +197,6 @@ main {
         color: #000; }
       .boxes div:hover label {
         color: #000; }
-
-form textarea {
-  height: 100%;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  resize: none;
-  padding: .5rem 1rem;
-  border-radius: 2px;
-  background: #656565;
-  box-shadow: inset 0px 0px 10px #292929;
-  color: #eece1a;
-  transition: all 0.5s ease-out; }
-
-form label {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 2.4rem;
-  text-align: center;
-  color: #eece1a; }
-  form label .hide {
-    opacity: 0;
-    font-size: .5rem; }
-
-form .btn, form .btn-dark, form .btn-light {
-  display: block;
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: .9rem;
-  border-radius: 8px; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -266,14 +228,14 @@ form .btn, form .btn-dark, form .btn-light {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
-@media screen and (min-width: 769) and (max-width: 1160px) {
+@media screen and (min-width: 800) and (max-width: 1160px) {
   .about-info {
     grid-template-areas: 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(1, 1fr); }
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 799px) {
   main {
     align-items: center;
     text-align: center; }
@@ -296,6 +258,9 @@ form .btn, form .btn-dark, form .btn-light {
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
+  .about-info {
+    grid-template-areas: 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: repeat(1, 1fr); }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
