@@ -72,6 +72,22 @@ main {
     }
 }
 
+.lazy {
+    opacity: 0;
+    margin-top: 25vh !important;
+    animation: 1.5s slidefade 1s forwards;
+}
+  
+  .lazy2 {
+    opacity: 0;
+    animation: 1.5s slidefade2 1.4s forwards;
+}
+  
+  .lazy3 {
+    opacity: 0;
+    animation: 1.5s slidefade2 1.8s forwards;
+}
+  
 .about-info {
     display: grid;
     grid-gap: 30px;

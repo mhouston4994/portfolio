@@ -29,9 +29,7 @@ function toggleMenu() {
         menuBranding.classList.remove("show");
         navItems.forEach(item => item.classList.remove("show"));
         
-        //Set Menu State
+        // Set Menu State
         showMenu = false;
     }
 }
-//Contact Form
-var hideForm = false;

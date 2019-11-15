@@ -1,3 +1,12 @@
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+    margin-top: 20vh; } }
+
+@keyframes slidefade2 {
+  100% {
+    opacity: 1; } }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -95,7 +104,7 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
   body#bg-img {
-    background: url(../img/background-min.jpg);
+    background: url(../img/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -143,6 +152,19 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+.lazy {
+  opacity: 0;
+  margin-top: 25vh !important;
+  animation: 1.5s slidefade 1s forwards; }
+
+.lazy2 {
+  opacity: 0;
+  animation: 1.5s slidefade2 1.4s forwards; }
+
+.lazy3 {
+  opacity: 0;
+  animation: 1.5s slidefade2 1.8s forwards; }
 
 .about-info {
   display: grid;
